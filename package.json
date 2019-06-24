@@ -2,10 +2,10 @@
   "name": "typescript-node",
   "version": "1.0.0",
   "description": "TypeScript Server",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "tsc && node dist/app.js",
+    "server": "tsc && nodemon dist/app.js",
     "test": "jest --watchAll --verbose"
   },
   "jest": {
