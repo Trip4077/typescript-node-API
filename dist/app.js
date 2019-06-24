@@ -1,9 +1,6 @@
-const express = require('express');
-const server = express();
+require('dotenv').config();
+const server = require('./server');
 const port = process.env.PORT || 5000;
-server.get('/', (req, res) => {
-    res.send("Server Found");
-});
 server.listen(port, err => {
     if (err) {
         console.log(err);
